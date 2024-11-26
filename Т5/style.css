@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+}
+
+.ball {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: green;
+	border-radius: 50%;
+	animation: anima 6s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes anima {
+	0% {
+		top: 0px;
+		left: 0px;
+	}
+
+	25% {
+		top: 0px;
+		left: 1500px;
+	}
+
+	50% {
+		top: 800px;
+		left: 1500px;
+	}
+
+	75% {
+		top: 800px;
+		left: 0px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
+
+	
+}
+
+.ball:hover {
+	animation-play-state: paused;
+}
